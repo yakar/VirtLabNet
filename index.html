@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>VirtLabNet Projesi | Yakından Eğitim</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- bootstrap CSS/JS kutuphaneleri -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- jquery -->
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.ready.js"></script>
+		
+	</head>
+  
+	<body>
+		<div class="container">
+		
+			<div class="breadcrumb"><h1>VirtLabNet Projesi</h1></div>
+			<form name="vln_form" id="vln_form" method="post" action="?"  class="form-horizontal">
+				<div class="control-group">
+					<label class="control-label">Cihazlar:</label>
+					<div class="controls">
+						<select name="node_name" id="node_name" class="input-large">
+							<option value="" selected></option>
+							<option value="server1">Server 1</option>
+							<option value="cihaz1">Cihaz 1</option>
+						</select>
+					</div>
+					
+					<br>
+					
+					<label class="control-label">İşlem:</label>
+					<div class="controls">
+						<select name="command" id="command" class="input-small">
+							<option value="" selected></option>
+							<option value="on">Açık</option>
+							<option value="off">Kapalı</option>
+						</select> &nbsp; <input type="button" name="calistir" id="calistir" value=" Çalıştır " class="btn btn-primary" />
+					</div>
+					
+				</div>
+				
+			</form>
+
+			<!-- calistirilan komut -->
+			<div id="komut" class="alert">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<div id="komut_mesaji">Cihaz ve işlem seçiniz.</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
